@@ -10,10 +10,10 @@ import SwiftUI
 struct ListUserRowView: View {
     let user: User
     var body: some View {
-        Text(user.name)
+        Text(user.login)
     }
 }
 
 #Preview {
-    ListUserRowView(user: User(name: "A"))
+    ListUserRowView(user: User(login: "abc", id: 1, nodeId: "", avatarUrl: "", name: "Jame"))
 }

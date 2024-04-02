@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct ListUsersView: View {
-    var users: [User] = [User(name: "a"), User(name: "a1")]
-    
+    @State private var users: [User] = []
     var body: some View {
         List(users) { user in
             ListUserRowView(user: user)
+        }
+        .task {
+            do {
+                users = try await User.all()
+            } catch {
+                users = []
+            }
+        }
+        .refreshable {
+            do {
+                users = try await User.all()
+            } catch {
+                users = []
+            }
         }
     }
 }
