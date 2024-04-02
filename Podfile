@@ -6,7 +6,6 @@ def dependencies_pods
   pod 'SwiftGen', '~> 6.0'
   pod 'SwiftLint'
   pod 'Moya', '~> 15.0'
-  pod 'Moya/Combine', '~> 15.0'
   pod 'XCGLogger', '~> 7.0.1'
 end
 

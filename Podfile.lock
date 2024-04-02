@@ -2,8 +2,6 @@ PODS:
   - Alamofire (5.7.1)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
-  - Moya/Combine (15.0.0):
-    - Moya/Core
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
   - ObjcExceptionBridging (1.0.1):
@@ -18,7 +16,6 @@ PODS:
 
 DEPENDENCIES:
   - Moya (~> 15.0)
-  - Moya/Combine (~> 15.0)
   - SwiftGen (~> 6.0)
   - SwiftLint
   - XCGLogger (~> 7.0.1)
@@ -40,6 +37,6 @@ SPEC CHECKSUMS:
   SwiftLint: 1cc5cd61ba9bacb2194e340aeb47a2a37fda00b3
   XCGLogger: 1943831ef907df55108b0b18657953f868de973b
 
-PODFILE CHECKSUM: b0295c520b669dd6590f364e8fa51dc0ac22a831
+PODFILE CHECKSUM: adde8453ab348b38058f19db4866ae7f0f48dda1
 
 COCOAPODS: 1.14.2
