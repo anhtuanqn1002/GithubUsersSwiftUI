@@ -10,7 +10,13 @@ import SwiftUI
 struct ListUserRowView: View {
     let user: User
     var body: some View {
-        Text(user.login)
+        HStack {
+            Image(.races)
+                .resizable()
+                .frame(width: 30, height: 30)
+            Text(user.login)
+                .foregroundStyle(.mainRed)
+        }
     }
 }
 

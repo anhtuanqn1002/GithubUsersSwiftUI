@@ -19,11 +19,9 @@
 		AB9F49EE2BA845B800E55215 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F49ED2BA845B800E55215 /* User.swift */; };
 		AB9F49F12BA8463D00E55215 /* ListUserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F49F02BA8463D00E55215 /* ListUserRowView.swift */; };
 		AB9F49F42BA8481700E55215 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F49F32BA8481700E55215 /* SearchView.swift */; };
-		ABCB56E62BA94BF50045059D /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = ABCB56E42BA94BF50045059D /* swiftgen.yml */; };
 		ABCB56E72BA94BF50045059D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = ABCB56E52BA94BF50045059D /* .swiftlint.yml */; };
 		ABCB56EA2BA94C350045059D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCB56E92BA94C350045059D /* Images.xcassets */; };
 		ABCB56EC2BA94C570045059D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCB56EB2BA94C570045059D /* Colors.xcassets */; };
-		ABCB56F02BA94F3B0045059D /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCB56EF2BA94F3B0045059D /* XCAssets+Generated.swift */; };
 		ABCB56F32BA952C20045059D /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCB56F22BA952C20045059D /* APIs.swift */; };
 		ABCB56F52BA9530D0045059D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCB56F42BA9530D0045059D /* Constant.swift */; };
 /* End PBXBuildFile section */
@@ -43,11 +41,9 @@
 		AB9F49ED2BA845B800E55215 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AB9F49F02BA8463D00E55215 /* ListUserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserRowView.swift; sourceTree = "<group>"; };
 		AB9F49F32BA8481700E55215 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		ABCB56E42BA94BF50045059D /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		ABCB56E52BA94BF50045059D /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		ABCB56E92BA94C350045059D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ABCB56EB2BA94C570045059D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		ABCB56EF2BA94F3B0045059D /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		ABCB56F22BA952C20045059D /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
 		ABCB56F42BA9530D0045059D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		B4FD92B8603F8B070639BA99 /* Pods_GithubUsersSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubUsersSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +101,6 @@
 		AB6151932BA8333C0057F0FD = {
 			isa = PBXGroup;
 			children = (
-				ABCB56E42BA94BF50045059D /* swiftgen.yml */,
 				ABCB56E52BA94BF50045059D /* .swiftlint.yml */,
 				AB61519E2BA8333C0057F0FD /* GithubUsersSwiftUI */,
 				AB61519D2BA8333C0057F0FD /* Products */,
@@ -178,14 +173,6 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		ABCB56E82BA94C1E0045059D /* Generated */ = {
-			isa = PBXGroup;
-			children = (
-				ABCB56EF2BA94F3B0045059D /* XCAssets+Generated.swift */,
-			);
-			path = Generated;
-			sourceTree = "<group>";
-		};
 		ABCB56F12BA952AD0045059D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,7 +189,6 @@
 				AB6151A32BA8333D0057F0FD /* Assets.xcassets */,
 				ABCB56EB2BA94C570045059D /* Colors.xcassets */,
 				ABCB56E92BA94C350045059D /* Images.xcassets */,
-				ABCB56E82BA94C1E0045059D /* Generated */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -215,7 +201,6 @@
 			buildConfigurationList = AB6151AB2BA8333D0057F0FD /* Build configuration list for PBXNativeTarget "GithubUsersSwiftUI" */;
 			buildPhases = (
 				2BDF7BD527ADC5F23E0619B5 /* [CP] Check Pods Manifest.lock */,
-				ABCB56EE2BA94CB80045059D /* SwiftGen */,
 				AB6151982BA8333C0057F0FD /* Sources */,
 				AB6151992BA8333C0057F0FD /* Frameworks */,
 				AB61519A2BA8333C0057F0FD /* Resources */,
@@ -274,7 +259,6 @@
 				AB6151A82BA8333D0057F0FD /* Preview Assets.xcassets in Resources */,
 				ABCB56EC2BA94C570045059D /* Colors.xcassets in Resources */,
 				AB6151A42BA8333D0057F0FD /* Assets.xcassets in Resources */,
-				ABCB56E62BA94BF50045059D /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,25 +323,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
-		ABCB56EE2BA94CB80045059D /* SwiftGen */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftGen;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi \n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -375,7 +340,6 @@
 				AB9F49F12BA8463D00E55215 /* ListUserRowView.swift in Sources */,
 				AB9F49EB2BA8459B00E55215 /* ListUsersView.swift in Sources */,
 				AB9F49F42BA8481700E55215 /* SearchView.swift in Sources */,
-				ABCB56F02BA94F3B0045059D /* XCAssets+Generated.swift in Sources */,
 				AB6151A02BA8333C0057F0FD /* GithubUsersSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
