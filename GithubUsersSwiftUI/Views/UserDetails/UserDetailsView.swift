@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct UserDetailsView: View {
-    let user: User
+    @State var user: User
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(user.login)
+            Text(user.name ?? "")
+            Text(user.company ?? "")
+        }
+        .task {
+            do {
+                user = try await user.getUserDetails()
+            } catch {
+            
+            }
+        }
     }
 }
 

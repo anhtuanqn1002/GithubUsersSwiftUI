@@ -10,21 +10,27 @@ import SwiftUI
 struct ListUsersView: View {
     @State private var users: [User] = []
     var body: some View {
-        List(users) { user in
-            ListUserRowView(user: user)
-        }
-        .task {
-            do {
-                users = try await User.all()
-            } catch {
-                users = []
+        NavigationView {
+            List(users) { user in
+                NavigationLink(destination: UserDetailsView(user: user)) {
+                    ListUserRowView(user: user)
+                }
             }
-        }
-        .refreshable {
-            do {
-                users = try await User.all()
-            } catch {
-                users = []
+            .navigationTitle("User List")
+            .navigationBarTitleDisplayMode(.inline)
+            .task {
+                do {
+                    users = try await User.all()
+                } catch {
+                    users = []
+                }
+            }
+            .refreshable {
+                do {
+                    users = try await User.all()
+                } catch {
+                    users = []
+                }
             }
         }
     }
