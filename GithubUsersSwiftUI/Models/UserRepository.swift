@@ -89,7 +89,85 @@ struct UserRepository: Codable {
     let defaultBranch: String
 
     enum CodingKeys: String, CodingKey {
-        case id, nodeId = "node_id", name, fullName = "full_name", isPrivate = "private", owner, htmlUrl = "html_url", description, fork, url, forksUrl = "forks_url", keysUrl = "keys_url", collaboratorsUrl = "collaborators_url", teamsUrl = "teams_url", hooksUrl = "hooks_url", issueEventsUrl = "issue_events_url", eventsUrl = "events_url", assigneesUrl = "assignees_url", branchesUrl = "branches_url", tagsUrl = "tags_url", blobsUrl = "blobs_url", gitTagsUrl = "git_tags_url", gitRefsUrl = "git_refs_url", treesUrl = "trees_url", statusesUrl = "statuses_url", languagesUrl = "languages_url", stargazersUrl = "stargazers_url", contributorsUrl = "contributors_url", subscribersUrl = "subscribers_url", subscriptionUrl = "subscription_url", commitsUrl = "commits_url", gitCommitsUrl = "git_commits_url", commentsUrl = "comments_url", issueCommentUrl = "issue_comment_url", contentsUrl = "contents_url", compareUrl = "compare_url", mergesUrl = "merges_url", archiveUrl = "archive_url", downloadsUrl = "downloads_url", issuesUrl = "issues_url", pullsUrl = "pulls_url", milestonesUrl = "milestones_url", notificationsUrl = "notifications_url", labelsUrl = "labels_url", releasesUrl = "releases_url", deploymentsUrl = "deployments_url", createdAt = "created_at", updatedAt = "updated_at", pushedAt = "pushed_at", gitUrl = "git_url", sshUrl = "ssh_url", cloneUrl = "clone_url", svnUrl = "svn_url", homepage, size, stargazersCount = "stargazers_count", watchersCount = "watchers_count", language, hasIssues = "has_issues", hasProjects = "has_projects", hasDownloads = "has_downloads", hasWiki = "has_wiki", hasPages = "has_pages", hasDiscussions = "has_discussions", forksCount = "forks_count", mirrorUrl = "mirror_url", archived, disabled, openIssuesCount = "open_issues_count", license, allowForking = "allow_forking", isTemplate = "is_template", webCommitSignoffRequired = "web_commit_signoff_required", topics, visibility, forks, openIssues = "open_issues", watchers, defaultBranch = "default_branch"
+        case id
+        case nodeId = "node_id"
+        case name
+        case fullName = "full_name"
+        case isPrivate = "private"
+        case owner
+        case htmlUrl = "html_url"
+        case description
+        case fork
+        case url
+        case forksUrl = "forks_url"
+        case keysUrl = "keys_url"
+        case collaboratorsUrl = "collaborators_url"
+        case teamsUrl = "teams_url"
+        case hooksUrl = "hooks_url"
+        case issueEventsUrl = "issue_events_url"
+        case eventsUrl = "events_url"
+        case assigneesUrl = "assignees_url"
+        case branchesUrl = "branches_url"
+        case tagsUrl = "tags_url"
+        case blobsUrl = "blobs_url"
+        case gitTagsUrl = "git_tags_url"
+        case gitRefsUrl = "git_refs_url"
+        case treesUrl = "trees_url"
+        case statusesUrl = "statuses_url"
+        case languagesUrl = "languages_url"
+        case stargazersUrl = "stargazers_url"
+        case contributorsUrl = "contributors_url"
+        case subscribersUrl = "subscribers_url"
+        case subscriptionUrl = "subscription_url"
+        case commitsUrl = "commits_url"
+        case gitCommitsUrl = "git_commits_url"
+        case commentsUrl = "comments_url"
+        case issueCommentUrl = "issue_comment_url"
+        case contentsUrl = "contents_url"
+        case compareUrl = "compare_url"
+        case mergesUrl = "merges_url"
+        case archiveUrl = "archive_url"
+        case downloadsUrl = "downloads_url"
+        case issuesUrl = "issues_url"
+        case pullsUrl = "pulls_url"
+        case milestonesUrl = "milestones_url"
+        case notificationsUrl = "notifications_url"
+        case labelsUrl = "labels_url"
+        case releasesUrl = "releases_url"
+        case deploymentsUrl = "deployments_url"
+        case createdAt = "created_at"
+        case updatedAt = "updated_at"
+        case pushedAt = "pushed_at"
+        case gitUrl = "git_url"
+        case sshUrl = "ssh_url"
+        case cloneUrl = "clone_url"
+        case svnUrl = "svn_url"
+        case homepage
+        case size
+        case stargazersCount = "stargazers_count"
+        case watchersCount = "watchers_count"
+        case language
+        case hasIssues = "has_issues"
+        case hasProjects = "has_projects"
+        case hasDownloads = "has_downloads"
+        case hasWiki = "has_wiki"
+        case hasPages = "has_pages"
+        case hasDiscussions = "has_discussions"
+        case forksCount = "forks_count"
+        case mirrorUrl = "mirror_url"
+        case archived
+        case disabled
+        case openIssuesCount = "open_issues_count"
+        case license
+        case allowForking = "allow_forking"
+        case isTemplate = "is_template"
+        case webCommitSignoffRequired = "web_commit_signoff_required"
+        case topics
+        case visibility
+        case forks
+        case openIssues = "open_issues"
+        case watchers
+        case defaultBranch = "default_branch"
     }
 }
 

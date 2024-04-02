@@ -114,7 +114,7 @@ struct User: Identifiable, Hashable, Codable {
         return try await network.getListUsers()
     }
     
-    func getUserDetails async throws -> User {
+    func getUserDetails() async throws -> User {
         let network = GithubUserAPI()
         return try await network.getUser(id: login)
     }

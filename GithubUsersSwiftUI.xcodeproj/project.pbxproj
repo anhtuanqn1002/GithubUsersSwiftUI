@@ -10,6 +10,7 @@
 		0CDBF744C52C4850C58704D9 /* Pods_GithubUsersSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FD92B8603F8B070639BA99 /* Pods_GithubUsersSwiftUI.framework */; };
 		AB32EC332BBBFCA100DDF6DC /* GithubAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32EC322BBBFCA100DDF6DC /* GithubAPIs.swift */; };
 		AB32EC352BBBFD5F00DDF6DC /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32EC342BBBFD5F00DDF6DC /* UserRepository.swift */; };
+		AB32EC382BBC00B300DDF6DC /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32EC372BBC00B300DDF6DC /* UserDetailsView.swift */; };
 		AB6151A02BA8333C0057F0FD /* GithubUsersSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB61519F2BA8333C0057F0FD /* GithubUsersSwiftUIApp.swift */; };
 		AB6151A22BA8333C0057F0FD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6151A12BA8333C0057F0FD /* MainView.swift */; };
 		AB6151A42BA8333D0057F0FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6151A32BA8333D0057F0FD /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		4917A757316A3DB8B164909E /* Pods-GithubUsersSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubUsersSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-GithubUsersSwiftUI/Pods-GithubUsersSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		AB32EC322BBBFCA100DDF6DC /* GithubAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIs.swift; sourceTree = "<group>"; };
 		AB32EC342BBBFD5F00DDF6DC /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		AB32EC372BBC00B300DDF6DC /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 		AB61519C2BA8333C0057F0FD /* GithubUsersSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUsersSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB61519F2BA8333C0057F0FD /* GithubUsersSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersSwiftUIApp.swift; sourceTree = "<group>"; };
 		AB6151A12BA8333C0057F0FD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -81,11 +83,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AB32EC362BBC00A200DDF6DC /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				AB32EC372BBC00B300DDF6DC /* UserDetailsView.swift */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
 		AB5D3D442BA836350032C83F /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				AB6151A12BA8333C0057F0FD /* MainView.swift */,
 				AB9F49E92BA8458B00E55215 /* ListUsers */,
+				AB32EC362BBC00A200DDF6DC /* UserDetails */,
 				AB9F49F22BA846F600E55215 /* Search */,
 			);
 			path = Views;
@@ -358,6 +369,7 @@
 				AB9F49EE2BA845B800E55215 /* User.swift in Sources */,
 				AB32EC332BBBFCA100DDF6DC /* GithubAPIs.swift in Sources */,
 				AB6151A22BA8333C0057F0FD /* MainView.swift in Sources */,
+				AB32EC382BBC00B300DDF6DC /* UserDetailsView.swift in Sources */,
 				ABCB56F52BA9530D0045059D /* Constant.swift in Sources */,
 				ABCB56F32BA952C20045059D /* APIs.swift in Sources */,
 				AB9F49F12BA8463D00E55215 /* ListUserRowView.swift in Sources */,
