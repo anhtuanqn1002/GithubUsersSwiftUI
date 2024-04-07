@@ -24,6 +24,7 @@
 		ABCB56EC2BA94C570045059D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCB56EB2BA94C570045059D /* Colors.xcassets */; };
 		ABCB56F32BA952C20045059D /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCB56F22BA952C20045059D /* APIs.swift */; };
 		ABCB56F52BA9530D0045059D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCB56F42BA9530D0045059D /* Constant.swift */; };
+		DDE982452BC2622300C7B6F7 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE982442BC2622300C7B6F7 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		ABCB56F22BA952C20045059D /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
 		ABCB56F42BA9530D0045059D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		B4FD92B8603F8B070639BA99 /* Pods_GithubUsersSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubUsersSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE982442BC2622300C7B6F7 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FF65B2978D1D841A25998A44 /* Pods-GithubUsersSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubUsersSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-GithubUsersSwiftUI/Pods-GithubUsersSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +155,7 @@
 			children = (
 				AB9F49ED2BA845B800E55215 /* User.swift */,
 				AB32EC342BBBFD5F00DDF6DC /* UserRepository.swift */,
+				DDE982442BC2622300C7B6F7 /* Profile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB32EC352BBBFD5F00DDF6DC /* UserRepository.swift in Sources */,
+				DDE982452BC2622300C7B6F7 /* Profile.swift in Sources */,
 				AB9F49EE2BA845B800E55215 /* User.swift in Sources */,
 				AB32EC332BBBFCA100DDF6DC /* GithubAPIs.swift in Sources */,
 				AB6151A22BA8333C0057F0FD /* MainView.swift in Sources */,

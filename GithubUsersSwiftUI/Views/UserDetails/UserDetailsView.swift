@@ -24,8 +24,8 @@ struct UserDetailsView: View {
             
             Spacer()
             Text(user.login)
-            Text(user.name ?? "")
-            Text(user.company ?? "")
+            Text(user.profile?.name ?? "")
+            Text(user.profile?.company ?? "")
             Spacer()
         }
         .task {
@@ -39,5 +39,5 @@ struct UserDetailsView: View {
 }
 
 #Preview {
-    UserDetailsView(user: User(login: "abc", id: 1, nodeId: "", avatarUrl: "", name: "Jame"))
+    UserDetailsView(user: .fullInfo)
 }

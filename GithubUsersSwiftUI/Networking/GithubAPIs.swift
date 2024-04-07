@@ -55,7 +55,7 @@ struct GithubUserAPI {
         return try await provider.async.request(.getListUsers)
     }
     
-    func getUser(id: String) async throws -> User {
+    func getUser(id: String) async throws -> Profile {
         return try await provider.async.request(.getUser(userId: id))
     }
     
