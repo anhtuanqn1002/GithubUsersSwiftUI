@@ -21,5 +21,5 @@ struct ListUserRowView: View {
 }
 
 #Preview {
-    ListUserRowView(user: User(login: "abc", id: 1, nodeId: "", avatarUrl: "", name: "Jame"))
+    ListUserRowView(user: .basic)
 }
