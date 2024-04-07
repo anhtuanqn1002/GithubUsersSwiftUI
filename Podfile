@@ -3,7 +3,6 @@ platform :ios, '15.0'
 
 def dependencies_pods
   # The Swift code generator for your assets, storyboards, Localizable.strings, … — Get rid of all String-based APIs!
-  pod 'SwiftLint'
   pod 'Moya', '~> 15.0'
 end
 
